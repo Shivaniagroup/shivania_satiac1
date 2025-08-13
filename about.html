@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - HS Shivania Group</title>
+    <meta name="description" content="Learn about HS Shivania Group - Leading provider of innovative cleaning solutions and industrial equipment with 15+ years of excellence.">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Mobile Sidebar -->
+    <div class="mobile-sidebar" id="mobileSidebar">
+        <div class="sidebar-header">
+            <div class="d-flex align-items-center">
+                <div class="logo-icon me-2">HS</div>
+                <span class="fw-bold text-white">HS Shivania Group</span>
+            </div>
+            <button class="sidebar-close" id="sidebarClose">
+                <i class="bi bi-x-lg"></i>
+            </button>
+        </div>
+        <div class="sidebar-content">
+            <ul class="sidebar-nav">
+                <li><a href="index.html"><i class="bi bi-house-door me-3"></i>Home</a></li>
+                <li><a href="shivania-group.html"><i class="bi bi-stars me-3"></i>Shivania Group</a></li>
+                <li><a href="hs-shivania.html"><i class="bi bi-gear-fill me-3"></i>HS Shivania</a></li>
+                <li><a href="about.html" class="active"><i class="bi bi-info-circle me-3"></i>About</a></li>
+                <li><a href="contact.html"><i class="bi bi-envelope me-3"></i>Contact</a></li>
+            </ul>
+            <div class="sidebar-cta">
+                <div class="cta-content">
+                    <h6 class="text-white mb-2">Get in Touch</h6>
+                    <p class="text-white-50 small mb-3">Ready to transform your business with our premium solutions?</p>
+                    <a href="tel:+919XXXXXXXXX" class="btn btn-light btn-sm w-100 mb-2">
+                        <i class="bi bi-telephone me-2"></i>Call Now
+                    </a>
+                    <a href="https://wa.me/919XXXXXXXXX" class="btn btn-success btn-sm w-100">
+                        <i class="bi bi-whatsapp me-2"></i>WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Sidebar Overlay -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <div class="logo-icon me-2">HS</div>
+                <span class="fw-bold">HS Shivania Group</span>
+            </a>
+            
+            <!-- Replaced Bootstrap navbar toggler with custom mobile menu button -->
+            <button class="mobile-menu-btn d-lg-none" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <div class="collapse navbar-collapse d-none d-lg-block" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shivania-group.html">Shivania Group</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hs-shivania.html">HS Shivania</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-5 bg-light" style="margin-top: 80px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="display-3 fw-bold mb-4">
+                        <span class="text-primary">About</span> HS Shivania Group
+                    </h1>
+                    <p class="lead text-muted">
+                        Leading the industry with innovative solutions in cleaning products and industrial supplies since our
+                        inception. We are committed to excellence, quality, and customer satisfaction.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Company Stats -->
+            <div class="row g-4 mt-5">
+                <div class="col-lg-3 col-md-6">
+                    <div class="text-center p-4 bg-white rounded-3 shadow-sm h-100">
+                        <div class="display-4 fw-bold text-primary mb-2" data-target="15">0</div>
+                        <div class="h6 text-muted">Years Experience</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="text-center p-4 bg-white rounded-3 shadow-sm h-100">
+                        <div class="display-4 fw-bold text-success mb-2" data-target="500">0</div>
+                        <div class="h6 text-muted">Happy Clients</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="text-center p-4 bg-white rounded-3 shadow-sm h-100">
+                        <div class="display-4 fw-bold text-warning mb-2" data-target="1000">0</div>
+                        <div class="h6 text-muted">Products</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="text-center p-4 bg-white rounded-3 shadow-sm h-100">
+                        <div class="display-4 fw-bold text-danger">24<span class="fs-4">/7</span></div>
+                        <div class="h6 text-muted">Support</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold mb-4">Our Story</h2>
+                    <p class="lead mb-4">
+                        HS Shivania Group was founded with a vision to provide comprehensive solutions for both household
+                        cleaning needs and industrial requirements. What started as a small venture has grown into a trusted
+                        name in the industry.
+                    </p>
+                    <p class="mb-4">
+                        Today, we operate through two specialized divisions: Shivania Group focusing on premium cleaning
+                        products for homes and offices, and HS Shivania Group providing industrial-grade equipment and supplies
+                        for manufacturing and commercial sectors.
+                    </p>
+                    <div class="row g-3">
+                        <div class="col-md-4">
+                            <div class="d-flex align-items-center text-success">
+                                <i class="bi bi-check-circle-fill me-2"></i>
+                                <span class="fw-bold">Quality Assured</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="d-flex align-items-center text-primary">
+                                <i class="bi bi-check-circle-fill me-2"></i>
+                                <span class="fw-bold">Customer Focused</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="d-flex align-items-center text-warning">
+                                <i class="bi bi-check-circle-fill me-2"></i>
+                                <span class="fw-bold">Innovation Driven</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card bg-primary text-white border-0 shadow-lg">
+                        <div class="card-body p-5">
+                            <div class="text-center mb-4">
+                                <i class="bi bi-building display-1 opacity-75"></i>
+                            </div>
+                            <h3 class="card-title h4 fw-bold mb-3">Our Mission</h3>
+                            <p class="card-text">
+                                To deliver exceptional cleaning solutions and industrial supplies that exceed customer expectations
+                                while maintaining the highest standards of quality, safety, and environmental responsibility.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision & Values -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="display-5 fw-bold mb-3">Vision & Values</h2>
+                    <p class="lead text-muted">
+                        Our core principles guide everything we do, from product development to customer service.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-sm h-100 bg-success bg-opacity-10">
+                        <div class="card-body text-center p-4">
+                            <div class="text-success mb-3">
+                                <i class="bi bi-eye display-4"></i>
+                            </div>
+                            <h3 class="card-title h5 fw-bold mb-3">Our Vision</h3>
+                            <p class="card-text text-muted">
+                                To be the leading provider of innovative cleaning and industrial solutions, setting new standards for
+                                quality and customer satisfaction globally.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-sm h-100 bg-primary bg-opacity-10">
+                        <div class="card-body text-center p-4">
+                            <div class="text-primary mb-3">
+                                <i class="bi bi-bullseye display-4"></i>
+                            </div>
+                            <h3 class="card-title h5 fw-bold mb-3">Our Goals</h3>
+                            <p class="card-text text-muted">
+                                Continuous innovation, sustainable practices, and building long-term partnerships with our clients while
+                                expanding our market presence.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-sm h-100 bg-danger bg-opacity-10">
+                        <div class="card-body text-center p-4">
+                            <div class="text-danger mb-3">
+                                <i class="bi bi-heart-fill display-4"></i>
+                            </div>
+                            <h3 class="card-title h5 fw-bold mb-3">Our Values</h3>
+                            <p class="card-text text-muted">
+                                Integrity, excellence, customer-centricity, and environmental responsibility form the foundation of our
+                                business operations.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="display-5 fw-bold mb-3">Why Choose HS Shivania Group?</h2>
+                    <p class="lead text-muted">
+                        We stand out in the industry through our commitment to excellence and customer satisfaction.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="text-warning mb-3">
+                                <i class="bi bi-trophy-fill display-4"></i>
+                            </div>
+                            <h3 class="card-title h5 fw-bold mb-3">Quality Products</h3>
+                            <p class="card-text text-muted">
+                                Premium quality products that meet international standards and exceed customer expectations.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="text-primary mb-3">
+                                <i class="bi bi-people-fill display-4"></i>
+                            </div>
+                            <h3 class="card-title h5 fw-bold mb-3">Expert Team</h3>
+                            <p class="card-text text-muted">
+                                Experienced professionals dedicated to providing the best solutions and support.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="text-success mb-3">
+                                <i class="bi bi-clock-fill display-4"></i>
+                            </div>
+                            <h3 class="card-title h5 fw-bold mb-3">Timely Delivery</h3>
+                            <p class="card-text text-muted">
+                                Reliable delivery schedules ensuring your operations never face interruptions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="text-info mb-3">
+                                <i class="bi bi-star-fill display-4"></i>
+                            </div>
+                            <h3 class="card-title h5 fw-bold mb-3">Customer Service</h3>
+                            <p class="card-text text-muted">24/7 customer support with personalized service and quick response times.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="text-danger mb-3">
+                                <i class="bi bi-globe display-4"></i>
+                            </div>
+                            <h3 class="card-title h5 fw-bold mb-3">Wide Network</h3>
+                            <p class="card-text text-muted">
+                                Extensive distribution network ensuring availability across multiple regions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <div class="text-secondary mb-3">
+                                <i class="bi bi-check-circle-fill display-4"></i>
+                            </div>
+                            <h3 class="card-title h5 fw-bold mb-3">Proven Track Record</h3>
+                            <p class="card-text text-muted">
+                                Years of successful partnerships and satisfied customers across various industries.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="display-5 fw-bold mb-4">Ready to Partner with Us?</h2>
+                    <p class="lead mb-4">
+                        Join hundreds of satisfied customers who trust HS Shivania Group for their cleaning and industrial needs.
+                    </p>
+                    <div class="d-flex flex-column flex-md-row gap-3 justify-content-center">
+                        <a href="contact.html" class="btn btn-light btn-lg px-4">Get Quote Now</a>
+                        <a href="contact.html" class="btn btn-outline-light btn-lg px-4">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="logo-icon me-2">HS</div>
+                        <h5 class="mb-0 fw-bold">HS Shivania Group</h5>
+                    </div>
+                    <p class="text-light opacity-75">
+                        Premium cleaning solutions and industrial equipment for business excellence.
+                    </p>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-3">Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2 text-light opacity-75">Cleaning Solutions</li>
+                        <li class="mb-2 text-light opacity-75">Industrial Equipment</li>
+                        <li class="mb-2 text-light opacity-75">Technical Support</li>
+                        <li class="mb-2 text-light opacity-75">Custom Solutions</li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="about.html" class="text-light opacity-75 text-decoration-none">About Us</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-light opacity-75 text-decoration-none">Contact</a></li>
+                        <li class="mb-2"><a href="#" class="text-light opacity-75 text-decoration-none">Privacy Policy</a></li>
+                        <li class="mb-2"><a href="#" class="text-light opacity-75 text-decoration-none">Terms of Service</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-3">Contact Info</h5>
+                    <div class="text-light opacity-75">
+                        <p class="mb-2"><i class="bi bi-envelope me-2"></i>info@hsshivaniagroup.com</p>
+                        <p class="mb-2"><i class="bi bi-telephone me-2"></i>+91 XXXXX XXXXX</p>
+                        <p class="mb-0"><i class="bi bi-geo-alt me-2"></i>Your Business Address</p>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4 opacity-25">
+            
+            <div class="text-center">
+                <p class="mb-0 text-light opacity-75">&copy; 2024 HS Shivania Group. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/919XXXXXXXXX?text=Hello! I'm interested in learning more about HS Shivania Group." class="whatsapp-btn position-fixed bottom-0 end-0 m-4 btn btn-success rounded-circle d-flex align-items-center justify-content-center" target="_blank">
+        <i class="bi bi-whatsapp fs-4"></i>
+    </a>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

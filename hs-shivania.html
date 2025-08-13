@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HS Shivania - Industrial Solutions | HS Shivania Group</title>
+    <meta name="description" content="HS Shivania provides comprehensive industrial equipment and manufacturing supplies with cutting-edge technology.">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Mobile Sidebar -->
+    <div class="mobile-sidebar" id="mobileSidebar">
+        <div class="sidebar-header">
+            <div class="d-flex align-items-center">
+                <div class="logo-icon me-2">HS</div>
+                <span class="fw-bold text-white">HS Shivania Group</span>
+            </div>
+            <button class="sidebar-close" id="sidebarClose">
+                <i class="bi bi-x-lg"></i>
+            </button>
+        </div>
+        <div class="sidebar-content">
+            <ul class="sidebar-nav">
+                <li><a href="index.html"><i class="bi bi-house-door me-3"></i>Home</a></li>
+                <li><a href="shivania-group.html"><i class="bi bi-stars me-3"></i>Shivania Group</a></li>
+                <li><a href="hs-shivania.html" class="active"><i class="bi bi-gear-fill me-3"></i>HS Shivania</a></li>
+                <li><a href="about.html"><i class="bi bi-info-circle me-3"></i>About</a></li>
+                <li><a href="contact.html"><i class="bi bi-envelope me-3"></i>Contact</a></li>
+            </ul>
+            <div class="sidebar-cta">
+                <div class="cta-content">
+                    <h6 class="text-white mb-2">Get in Touch</h6>
+                    <p class="text-white-50 small mb-3">Ready to transform your business with our industrial solutions?</p>
+                    <a href="tel:+919XXXXXXXXX" class="btn btn-light btn-sm w-100 mb-2">
+                        <i class="bi bi-telephone me-2"></i>Call Now
+                    </a>
+                    <a href="https://wa.me/919XXXXXXXXX" class="btn btn-success btn-sm w-100">
+                        <i class="bi bi-whatsapp me-2"></i>WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Sidebar Overlay -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+    <img src="media/logo/shivania.png" alt="HS Logo" class="me-2 img-fluid" style="max-height:60px; height:auto;">
+    <span class="fw-bold">Shivania Group</span>
+</a>
+            
+            <!-- Added search bar and updated navbar layout -->
+            <div class="d-flex align-items-center order-lg-2">
+                <!-- Search Bar -->
+                <div class="search-container me-3 d-none d-md-block">
+                    <div class="input-group">
+                        <input type="text" class="form-control search-input" placeholder="Search industrial solutions..." id="searchInput">
+                        <button class="btn btn-outline-secondary search-btn" type="button" id="searchBtn">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn d-lg-none" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            
+            <div class="collapse navbar-collapse d-none d-lg-block order-lg-1" id="navbarNav">
+                <ul class="navbar-nav ms-auto me-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shivania-group.html">Shivania Group</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="hs-shivania.html">HS Shivania</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Carousel -->
+    <section id="industrialCarousel" class="carousel slide hero-slider" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#industrialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#industrialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#industrialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        
+        <div class="carousel-inner">
+    <div class="carousel-item active hero-slide modern-slide">
+        
+        <!-- Slide Image -->
+        <img src="media/images/8.png" class="d-block w-100" alt="Industrial Excellence">
+        
+        <!-- Dark overlay -->
+        <div class="hero-overlay-dark"></div>
+        
+        <!-- Caption -->
+        <div class="carousel-caption d-flex flex-column justify-content-center h-100">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <div class="hero-subtitle mb-3">HS Shivania Industrial</div>
+                        <h1 class="hero-title display-2 fw-bold mb-4">Industrial Excellence</h1>
+                        <p class="hero-description lead mb-4">
+                            Comprehensive service and supplier for industrial equipment and manufacturing supplies with cutting-edge technology.
+                        </p>
+                        <a href="#solutions" class="btn btn-primary btn-lg hero-btn px-5 py-3">
+                            View Solutions <i class="bi bi-arrow-down ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+            
+            <div class="carousel-item hero-slide modern-slide">
+                <div class="hero-overlay-dark"></div>
+                <div class="carousel-caption d-flex flex-column justify-content-center h-100">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8 text-center">
+                                <div class="hero-subtitle mb-3">Advanced Manufacturing</div>
+                                <h1 class="hero-title display-2 fw-bold mb-4">Cutting-Edge Technology</h1>
+                                <p class="hero-description lead mb-4">State-of-the-art industrial machinery and equipment for modern manufacturing processes and production lines.</p>
+                                <a href="#solutions" class="btn btn-warning btn-lg hero-btn px-5 py-3">
+                                    Explore Technology <i class="bi bi-gear ms-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="carousel-item hero-slide modern-slide">
+                <div class="hero-overlay-dark"></div>
+                <div class="carousel-caption d-flex flex-column justify-content-center h-100">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8 text-center">
+                                <div class="hero-subtitle mb-3">Expert Support</div>
+                                <h1 class="hero-title display-2 fw-bold mb-4">24/7 Technical Services</h1>
+                                <p class="hero-description lead mb-4">Round-the-clock technical support, installation services, and maintenance programs for all industrial equipment.</p>
+                                <a href="contact.html" class="btn btn-success btn-lg hero-btn px-5 py-3">
+                                    Get Support <i class="bi bi-headset ms-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Removed carousel navigation controls that were causing UI issues -->
+    </section>
+
+    <!-- Solutions Section -->
+    <section id="solutions" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="display-4 fw-bold mb-3">Industrial Solutions</h2>
+                    <p class="lead text-muted">Comprehensive industrial equipment and services for modern manufacturing</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="solution-card card h-100 border-0 shadow">
+                        <div class="card-img-top position-relative">
+                            <img src="/placeholder.svg?height=250&width=400" alt="Industrial Machinery" class="img-fluid">
+                            <div class="solution-badge badge bg-primary position-absolute top-0 end-0 m-3">Premium</div>
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold">Industrial Machinery</h5>
+                            <p class="card-text text-muted">Heavy-duty industrial equipment for manufacturing and production processes.</p>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><i class="bi bi-check-circle text-primary me-2"></i>CNC Machines</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-primary me-2"></i>Production Lines</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-primary me-2"></i>Assembly Equipment</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-primary me-2"></i>Quality Control Systems</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-primary w-100">Get Quote</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="solution-card card h-100 border-0 shadow">
+                        <div class="card-img-top position-relative">
+                            <img src="/placeholder.svg?height=250&width=400" alt="Manufacturing Supplies" class="img-fluid">
+                            <div class="solution-badge badge bg-success position-absolute top-0 end-0 m-3">Popular</div>
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold">Manufacturing Supplies</h5>
+                            <p class="card-text text-muted">Essential supplies and materials for efficient manufacturing operations.</p>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><i class="bi bi-check-circle text-primary me-2"></i>Raw Materials</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-primary me-2"></i>Industrial Tools</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-primary me-2"></i>Safety Equipment</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-primary me-2"></i>Maintenance Supplies</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-success w-100">Get Quote</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="solution-card card h-100 border-0 shadow">
+                        <div class="card-img-top position-relative">
+                            <img src="/placeholder.svg?height=250&width=400" alt="Technical Services" class="img-fluid">
+                            <div class="solution-badge badge bg-warning position-absolute top-0 end-0 m-3">Expert</div>
+                        </div>
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold">Technical Services</h5>
+                            <p class="card-text text-muted">Specialized technical services and support for industrial operations.</p>
+                            <ul class="list-unstyled mb-4">
+                                <li class="mb-2"><i class="bi bi-check-circle text-primary me-2"></i>Installation Services</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-primary me-2"></i>Maintenance Support</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-primary me-2"></i>Technical Consulting</li>
+                                <li class="mb-2"><i class="bi bi-check-circle text-primary me-2"></i>Training Programs</li>
+                            </ul>
+                            <a href="contact.html" class="btn btn-warning w-100">Get Quote</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center mb-5">
+                    <h2 class="display-4 fw-bold mb-3">Industries We Serve</h2>
+                    <p class="lead text-muted">Providing specialized solutions across various industrial sectors</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="industry-card text-center p-4 h-100 bg-white rounded-3 shadow-sm">
+                        <div class="industry-icon bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3">
+                            <i class="bi bi-building fs-2"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">Manufacturing</h5>
+                        <p class="text-muted">Complete solutions for manufacturing facilities and production lines.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="industry-card text-center p-4 h-100 bg-white rounded-3 shadow-sm">
+                        <div class="industry-icon bg-success text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3">
+                            <i class="bi bi-tools fs-2"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">Automotive</h5>
+                        <p class="text-muted">Specialized equipment and supplies for automotive manufacturing.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="industry-card text-center p-4 h-100 bg-white rounded-3 shadow-sm">
+                        <div class="industry-icon bg-warning text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3">
+                            <i class="bi bi-lightning fs-2"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">Electronics</h5>
+                        <p class="text-muted">Precision equipment for electronics and technology manufacturing.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="industry-card text-center p-4 h-100 bg-white rounded-3 shadow-sm">
+                        <div class="industry-icon bg-info text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3">
+                            <i class="bi bi-droplet fs-2"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">Chemical</h5>
+                        <p class="text-muted">Safe and reliable equipment for chemical processing industries.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="logo-icon me-2">HS</div>
+                        <h5 class="mb-0 fw-bold">HS Shivania Group</h5>
+                    </div>
+                    <p class="text-light opacity-75">
+                        Your trusted partner for cleaning solutions and industrial supplies with excellence.
+                    </p>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="shivania-group.html" class="text-light opacity-75 text-decoration-none">Shivania Group</a></li>
+                        <li class="mb-2"><a href="hs-shivania.html" class="text-light opacity-75 text-decoration-none">HS Shivania</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-light opacity-75 text-decoration-none">About</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-light opacity-75 text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-3">Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2 text-light opacity-75">Cleaning Solutions</li>
+                        <li class="mb-2 text-light opacity-75">Industrial Supplies</li>
+                        <li class="mb-2 text-light opacity-75">Equipment Services</li>
+                        <li class="mb-2 text-light opacity-75">Custom Solutions</li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-3">Contact Info</h5>
+                    <div class="text-light opacity-75">
+                        <p class="mb-2"><i class="bi bi-envelope me-2"></i>info@hsshivaniagroup.com</p>
+                        <p class="mb-2"><i class="bi bi-telephone me-2"></i>+91 XXXXX XXXXX</p>
+                        <p class="mb-0"><i class="bi bi-geo-alt me-2"></i>Your Business Address</p>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4 opacity-25">
+            
+            <div class="text-center">
+                <p class="mb-0 text-light opacity-75">&copy; 2024 HS Shivania Group. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/919XXXXXXXXX?text=Hello! I'm interested in HS Shivania's industrial solutions." class="whatsapp-btn position-fixed bottom-0 end-0 m-4 btn btn-success rounded-circle d-flex align-items-center justify-content-center" target="_blank">
+        <i class="bi bi-whatsapp fs-4"></i>
+    </a>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

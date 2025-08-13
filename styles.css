@@ -1,0 +1,935 @@
+/* Custom CSS for HS Shivania Group - Mobile Responsive */
+
+:root {
+  --primary-color: #3b82f6;
+  --secondary-color: #10b981;
+  --accent-color: #ef4444;
+  --dark-color: #1f2937;
+  --light-color: #f8fafc;
+}
+
+/* Logo Styles */
+.logo-icon {
+  width: 3rem;
+  height: 3rem;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color), var(--accent-color));
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Enhanced navbar styles with color-changing scroll effect */
+.navbar {
+  transition: all 0.3s ease;
+  padding: 1rem 0;
+  background: transparent !important;
+  backdrop-filter: none;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link,
+.mobile-menu-btn span {
+  color: white !important;
+  transition: color 0.3s ease;
+}
+
+.navbar.scrolled {
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 0;
+}
+
+.navbar.scrolled .navbar-brand,
+.navbar.scrolled .nav-link {
+  color: var(--dark-color) !important;
+}
+
+.navbar.scrolled .mobile-menu-btn span {
+  background: var(--dark-color) !important;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--primary-color) !important;
+}
+
+/* Search bar styles */
+.search-container {
+  max-width: 300px;
+}
+
+.search-input {
+  border-radius: 25px 0 0 25px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.search-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.search-input:focus {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.2rem rgba(59, 130, 246, 0.25);
+  color: white;
+}
+
+.search-btn {
+  border-radius: 0 25px 25px 0;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.search-btn:hover {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+}
+
+/* Search styles when navbar is scrolled */
+.navbar.scrolled .search-input {
+  background: rgba(0, 0, 0, 0.05);
+  border-color: rgba(0, 0, 0, 0.1);
+  color: var(--dark-color);
+}
+
+.navbar.scrolled .search-input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar.scrolled .search-input:focus {
+  background: rgba(0, 0, 0, 0.1);
+  color: var(--dark-color);
+}
+
+.navbar.scrolled .search-btn {
+  background: rgba(0, 0, 0, 0.05);
+  border-color: rgba(0, 0, 0, 0.1);
+  color: var(--dark-color);
+}
+
+/* Modern Hero Slider Styles */
+.hero-slider {
+  height: 100vh;
+  min-height: 600px;
+  position: relative;
+}
+
+.hero-slide {
+  height: 100vh;
+  min-height: 600px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Modern dark technology background for carousel slides */
+.modern-slide {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 25%, #334155 50%, #475569 75%, #64748b 100%);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+  position: relative;
+  overflow: hidden;
+}
+
+.modern-slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(circle at 20% 80%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(16, 185, 129, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(139, 92, 246, 0.05) 0%, transparent 50%);
+  background-size: 100% 100%;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Modern dark overlay for better text contrast */
+.hero-overlay-dark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(15, 23, 42, 0.8) 0%,
+    rgba(30, 41, 59, 0.7) 25%,
+    rgba(51, 65, 85, 0.6) 50%,
+    rgba(71, 85, 105, 0.7) 75%,
+    rgba(100, 116, 139, 0.8) 100%
+  );
+  backdrop-filter: blur(1px);
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.8) 0%, rgba(239, 68, 68, 0.8) 100%);
+}
+
+.hero-overlay-green {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.8) 0%, rgba(14, 165, 233, 0.8) 100%);
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero-title {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.hero-description {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.hero-btn {
+  padding: 1rem 2.5rem;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  font-size: 1.1rem;
+  border: 2px solid transparent;
+}
+
+.hero-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Modern carousel controls with glass-morphism effect */
+.modern-control {
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  opacity: 0.8;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-control-prev {
+  left: 15px;
+}
+
+.carousel-control-next {
+  right: 15px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: auto;
+  height: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 1;
+}
+
+.carousel-control-prev {
+  left: 20px;
+}
+
+.carousel-control-next {
+  right: 20px;
+}
+
+.modern-control:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+  opacity: 1;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.modern-control i {
+  color: white;
+  font-size: 1.5rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Modern carousel indicators */
+.carousel-indicators {
+  bottom: 30px;
+  margin-bottom: 0;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  margin: 0 6px;
+  transition: all 0.3s ease;
+  opacity: 1;
+}
+
+.carousel-indicators [data-bs-target].active {
+  background: white;
+  border-color: white;
+  transform: scale(1.2);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Hero Section Styles */
+.hero-section {
+  padding: 100px 0 50px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.hero-image {
+  animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Business Cards */
+.business-card {
+  transition: all 0.3s ease;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.business-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15) !important;
+}
+
+.business-icon {
+  width: 4rem;
+  height: 4rem;
+  font-size: 2rem;
+}
+
+/* Statistics Section */
+.stat-card {
+  transition: all 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.stat-icon {
+  width: 4rem;
+  height: 4rem;
+}
+
+.stat-number {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+/* Feature Cards */
+.feature-card {
+  transition: all 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1) !important;
+}
+
+.feature-icon {
+  width: 4rem;
+  height: 4rem;
+}
+
+/* Industry Card Styles */
+.industry-card {
+  transition: all 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+.industry-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1) !important;
+}
+
+.industry-icon {
+  width: 4rem;
+  height: 4rem;
+}
+
+/* Product and Solution Card Styles */
+.product-card,
+.solution-card {
+  transition: all 0.3s ease;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.product-card:hover,
+.solution-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15) !important;
+}
+
+.product-card img,
+.solution-card img {
+  height: 250px;
+  object-fit: cover;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover img,
+.solution-card:hover img {
+  transform: scale(1.05);
+}
+
+.product-badge,
+.solution-badge {
+  font-size: 0.8rem;
+  padding: 0.5rem 1rem;
+}
+
+/* Gallery Styles */
+.gallery-item {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.gallery-item img {
+  height: 300px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.gallery-overlay {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+  opacity: 1;
+}
+
+/* Partner Logos */
+.partner-logo {
+  transition: all 0.3s ease;
+  opacity: 0.7;
+}
+
+.partner-logo:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* WhatsApp Button */
+.whatsapp-btn {
+  width: 60px;
+  height: 60px;
+  background: #25d366 !important;
+  border: none;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+  z-index: 1000;
+  animation: pulse 2s infinite;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.1);
+  background: #128c7e !important;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+  }
+  50% {
+    box-shadow: 0 4px 25px rgba(37, 211, 102, 0.6);
+  }
+  100% {
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+  }
+}
+
+/* Mobile Sidebar Styles */
+.mobile-sidebar {
+  position: fixed;
+  top: 0;
+  left: -320px;
+  width: 320px;
+  height: 100vh;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  z-index: 9999;
+  transition: left 0.3s ease;
+  overflow-y: auto;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-sidebar.active {
+  left: 0;
+}
+
+.sidebar-header {
+  padding: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: between;
+  align-items: center;
+}
+
+.sidebar-close {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+  margin-left: auto;
+}
+
+.sidebar-close:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-content {
+  padding: 1rem 0;
+  height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.sidebar-nav li {
+  margin: 0;
+}
+
+.sidebar-nav a {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border-left: 3px solid transparent;
+}
+
+.sidebar-nav a:hover,
+.sidebar-nav a.active {
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  border-left-color: white;
+}
+
+.sidebar-cta {
+  padding: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: auto;
+}
+
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9998;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.sidebar-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Updated mobile menu button styles for color-changing navbar */
+.mobile-menu-btn {
+  background: none;
+  border: none;
+  width: 35px;
+  height: 35px;
+  position: relative;
+  cursor: pointer;
+  padding: 5px;
+  z-index: 1000;
+}
+
+.mobile-menu-btn span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 4px 0;
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+.mobile-menu-btn.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.mobile-menu-btn.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-menu-btn.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* Gradient Background Utilities */
+.bg-gradient-primary {
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color)) !important;
+}
+
+.bg-gradient-success {
+  background: linear-gradient(135deg, var(--secondary-color), #0ea5e9) !important;
+}
+
+/* Responsive Design Enhancements */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    display: none !important;
+  }
+
+  .mobile-menu-btn {
+    display: block !important;
+  }
+
+  /* Ensure search is properly hidden on mobile */
+  .search-container {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Better mobile carousel sizing */
+  .hero-slider,
+  .hero-slide {
+    height: 80vh;
+    min-height: 600px;
+  }
+
+  .hero-title {
+    font-size: 2.5rem !important;
+    line-height: 1.2;
+  }
+
+  .hero-description {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+
+  /* Improved mobile button sizing */
+  .hero-btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+
+  /* Better mobile card spacing */
+  .business-card,
+  .feature-card,
+  .stat-card {
+    margin-bottom: 2rem;
+  }
+
+  /* Mobile-optimized statistics */
+  .stat-number {
+    font-size: 2.5rem;
+  }
+
+  .business-icon,
+  .feature-icon,
+  .stat-icon {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  /* Mobile carousel controls positioning */
+  .modern-control {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .carousel-control-prev {
+    left: 15px;
+  }
+
+  .carousel-control-next {
+    right: 15px;
+  }
+
+  .carousel-indicators {
+    bottom: 25px;
+  }
+
+  .carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    margin: 0 4px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Extra small mobile optimizations */
+  .hero-slider,
+  .hero-slide {
+    height: 75vh;
+    min-height: 500px;
+  }
+
+  .hero-title {
+    font-size: 2rem !important;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .hero-btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .display-4 {
+    font-size: 1.8rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+
+  /* Smaller mobile carousel controls */
+  .modern-control {
+    width: 45px;
+    height: 45px;
+  }
+
+  .modern-control i {
+    font-size: 1.2rem;
+  }
+
+  .carousel-indicators {
+    bottom: 20px;
+  }
+
+  /* Mobile sidebar improvements */
+  .mobile-sidebar {
+    width: 280px;
+  }
+
+  .sidebar-nav a {
+    padding: 0.8rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .sidebar-cta {
+    padding: 1rem;
+  }
+
+  .sidebar-cta .btn {
+    font-size: 0.85rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+/* Ensure proper display on larger screens */
+@media (min-width: 992px) {
+  .mobile-sidebar,
+  .sidebar-overlay,
+  .mobile-menu-btn {
+    display: none !important;
+  }
+
+  .navbar-collapse {
+    display: flex !important;
+  }
+
+  .search-container {
+    display: block !important;
+  }
+}
+
+/* Fix carousel positioning issues */
+.carousel-control-prev,
+.carousel-control-next {
+  width: auto;
+  height: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 1;
+}
+
+.carousel-control-prev {
+  left: 20px;
+}
+
+.carousel-control-next {
+  right: 20px;
+}
+
+/* Ensure proper text contrast on all devices */
+.hero-title,
+.hero-description,
+.hero-subtitle {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Better touch targets for mobile */
+@media (hover: none) and (pointer: coarse) {
+  .btn,
+  .nav-link,
+  .carousel-control-prev,
+  .carousel-control-next {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  .modern-control {
+    min-height: 50px;
+    min-width: 50px;
+  }
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Loading Animation */
+.fade-in {
+  animation: fadeIn 0.6s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Custom Bootstrap Overrides */
+.btn-lg {
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+}
+
+.card {
+  border: none;
+  border-radius: 1rem;
+}
+
+.badge {
+  font-size: 0.8rem;
+  padding: 0.5rem 1rem;
+}
+
+/* Accessibility Improvements */
+.btn:focus,
+.nav-link:focus {
+  box-shadow: 0 0 0 0.2rem rgba(59, 130, 246, 0.25);
+}
+
+/* Print Styles */
+@media print {
+  .navbar,
+  .whatsapp-btn,
+  .carousel-control-prev,
+  .carousel-control-next,
+  .carousel-indicators {
+    display: none !important;
+  }
+}
